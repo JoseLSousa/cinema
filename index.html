@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Site</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/owlCarousel/dist/assets/owl.theme.default.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="/images/imagem1.jpg"></div>
+            <div class="item"><img src="/images/imagem2.jpg"></div>
+            <div class="item"><img src="/images/imagem3.jpg"></div>
+            <div class="item"><img src="/images/imagem4.jpg"></div>
+            <div class="item"><img src="/images/imagem5.jpg"></div>
+            <div class="item"><img src="/images/imagem6.jpg"></div>
+        </div>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="lib/owlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 15,
+                autoplay: true,
+                autoplayTimeout: 2500,
+            });
+        });
+    </script>
+</body>
